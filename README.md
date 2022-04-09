@@ -18,13 +18,7 @@ AND ‘2022-02-01’
 
 #### 1. Síntaxe básica
 ````
-SELECT * FROM table
-LIMIT 1
-````
-#### 2. Síntaxe básica com ORDER BY
-````
-SELECT * FROM table
-ORDER BY column_1 DESC
-LIMIT 5
+SELECT COUNT(*) FROM table
+WHERE column BETWEEN 8 AND 9
 ````
 #### Para mais exemplos, verificar o arquivo sql
