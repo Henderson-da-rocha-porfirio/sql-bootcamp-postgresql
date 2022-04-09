@@ -46,3 +46,8 @@ SELECT * FROM payment
 WHERE payment.amount != 0.00
 ORDER BY payment.payment_date DESC
 LIMIT 5
+
+
+-- film where
+SELECT COUNT(film.title) FROM film
+WHERE film.length <= 50
