@@ -1,12 +1,14 @@
-# COUNT - CONTANDO ROWS DE FORMA GERAL OU  DE COLUNAS ESPECÍFICAS
-### A função COUNT retorna o número de linhas de entrada que correspondem a uma condição específica de uma consulta.
-### Podemos aplicar COUNT em uma coluna específica ou apenas passar COUNT(*) , logo veremos que isso deve retornar o mesmo resultado.
-### Sintaxe de exemplo para a instrução SELECT:
-#### 1. 
+# WHERE - ESPECIFICANDO CONDIÇÕES A SEREM SELECIONADAS
+### A instrução WHERE nos permite especificar condições nas colunas para as linhas a serem retornadas.
+### A cláusula WHERE aparece imediatamente após a cláusula FROM da instrução SELECT.
+### As condições são usadas para filtrar as linhas retornadas da instrução SELECT.
+### O PostgreSQL fornece uma variedade de operadores padrão para construir as condições
+#### 1. Síntaxe básica
 ````
-SELECT COUNT(name) FROM table
-
+SELECT column1, column2
+FROM table
+WHERE conditions;
 ````
-#### 3. Para mais exemplos, verificar o arquivo sql
+#### Para mais exemplos, verificar o arquivo sql
 
 
