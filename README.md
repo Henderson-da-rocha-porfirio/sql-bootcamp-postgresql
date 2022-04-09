@@ -1,6 +1,16 @@
-# IN - criar uma condição que verifica se um valor está incluído em uma lista de várias opções
-### Em certos casos, você deseja verificar várias opções de valor possíveis, por exemplo, se o nome de um usuário aparecer em uma(IN) lista de nomes conhecidos.
-### Podemos usar o operador IN para criar uma condição que verifica se um valor está incluído em uma lista de várias opções.
+# LIKE and ILIKE - permite realizar correspondência de padrões com dados de string com o uso de caracteres curinga. ILIKE não diferencia maiúsculas de minúscula
+### É possível fazer comparações diretas com strings, como: WHERE first_name = 'João'
+### Contudo, como fazer para corresponder a um padrão geral em uma string onde quero que todos os e-mails que terminam em '@gmail.com' me devolvam nomes que começam com " A "?
+#### 1. Todos os nomes que começam com 'A': WHERE nome LIKE 'A%'
+#### 2. Todos os nomes que terminam com 'a': WHERE nome LIKE '%a'
+### Observe que LIKE diferencia maiúsculas de minúsculas, podemos usar ILIKE que não diferencia maiúsculas de minúsculas.
+### O operador LIKE nos permite realizar correspondência de padrões com dados de string com o uso de caracteres curinga:
+#### Porcentagem  " % " : Corresponde a qualquer sequência de caracteres
+#### Sublinhado  " _ " : Corresponde a qualquer caractere único
+### Usar o sublinhado " _ " nos permite substituir apenas um único caractere
+Obtenha todos os filmes de Missão Impossível WHERE title LIKE 'Missão Impossível _'
+
+
 
 #### 1. Síntaxe básica
 ````
