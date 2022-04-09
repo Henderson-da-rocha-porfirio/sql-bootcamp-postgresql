@@ -1,4 +1,31 @@
 -- CUSTOMER
+-- ALEATORIO
+SELECT * FROM customer
+ORDER BY customer.first_name
+-- ORDEM CRESCENTE
+SELECT * FROM customer
+ORDER BY customer.first_name ASC
+-- ORDEM DECRESCENTE
+SELECT * FROM customer
+ORDER BY customer.first_name DESC
+-- LIMITANDO BUSCA
+SELECT * FROM customer
+ORDER BY customer.store_id
+-- LIMITANDO BUSCA 2
+SELECT customer.store_id, customer.first_name, customer.last_name FROM customer
+ORDER BY customer.store_id
+-- LIMITANDO BUSCA 3
+SELECT customer.store_id, customer.first_name, customer.last_name FROM customer
+ORDER BY customer.store_id,customer.first_name
+-- LIMITANDO BUSCA 4
+SELECT customer.store_id, customer.first_name, customer.last_name FROM customer
+ORDER BY customer.store_id DESC,customer.first_name ASC
+-- LIMITANDO BUSCA 5
+SELECT customer.first_name, customer.last_name FROM customer
+ORDER BY customer.store_id DESC,customer.first_name ASC
+
+
+-- CUSTOMER
 SELECT * FROM customer
 -- Selecionar os dados de um consumidor pelo primeiro nome dele 
 SELECT * FROM customer
