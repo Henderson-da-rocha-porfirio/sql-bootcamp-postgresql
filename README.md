@@ -1,6 +1,7 @@
-# ORDER BY - classificar linhas com base em um valor de coluna, em ordem crescente ou decrescente
-### O PostgreSQL às vezes retorna os mesmos resultados da consulta de solicitação em uma ordem diferente.
-### Usar ORDER BY para classificar linhas com base em um valor de coluna, em ordem crescente ou decrescente.
+# LIMIT - O comando LIMIT permite limitar o número de linhas retornadas para uma consulta.
+### Útil para não querer retornar todas as linhas de uma tabela, mas apenas visualizar as primeiras linhas para ter uma ideia do layout da tabela.
+### LIMIT também se torna útil em combinação com ORDER BY
+### LIMIT vai no final de uma solicitação de consulta e é o último comando a ser executado.
 #### 1. Síntaxe básica
 ````
 SELECT column_1,column_2
