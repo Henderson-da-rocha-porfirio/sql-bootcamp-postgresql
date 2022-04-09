@@ -25,12 +25,38 @@ SELECT customer.first_name, customer.last_name FROM customer
 ORDER BY customer.store_id DESC,customer.first_name ASC
 
 
--- CUSTOMER
+-- PAYMENT ORDER BY
+SELECT * FROM payment
+-- exemplo
+SELECT * FROM payment
+ORDER BY payment.payment_date
+-- exemplo 2
+SELECT * FROM payment
+ORDER BY payment.payment_date ASC
+-- exemplo 3
+SELECT * FROM payment
+ORDER BY payment.payment_date DESC
+-- exemplo 3
+SELECT * FROM payment
+ORDER BY payment.payment_date DESC
+LIMIT 5
+-- exemplo 4
+SELECT * FROM payment
+WHERE payment.amount != 0.00
+ORDER BY payment.payment_date DESC
+LIMIT 5
+
+
+-- CUSTOMER WHERE
 SELECT * FROM customer
 -- Selecionar os dados de um consumidor pelo primeiro nome dele 
 SELECT * FROM customer
 WHERE customer.first_name = 'Jared'
--- FILM
+
+
+
+
+-- FILM WHERE
 SELECT * FROM film
 -- exemplo 2
 SELECT * FROM film
