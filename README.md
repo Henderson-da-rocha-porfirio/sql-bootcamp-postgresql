@@ -1,4 +1,4 @@
-# SELECT
+# SELECT - COMANDO INICIAL PARA SELECIONAR
 ### SELECT é a instrução mais comum usada e nos permite recuperar informações de uma tabela. Mais tarde vamos aprender a combinar
 
 ### SELECT com outras instruções para realizar consultas mais complexas.
