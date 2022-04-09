@@ -1,4 +1,4 @@
-# DISTINCT
+# DISTINCT - PEGAR VALORES DE COLUNAS ESPECÍFICAS
 ### Às vezes, uma tabela contém uma coluna com valores duplicados e você pode se encontrar em uma situação em que deseja apenas listar os valores exclusivos/distintos. 
 ### A palavra-chave DISTINCT opera em uma coluna. A sintaxe fica assim:
 #### 1. 
