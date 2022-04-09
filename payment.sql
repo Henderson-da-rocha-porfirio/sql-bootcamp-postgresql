@@ -6,21 +6,31 @@ SELECT * FROM payment
 LIMIT 2
 
 -- exemplo
+SELECT DISTINCT(payment.amount) FROM payment
+
+-- exemplo
+SELECT DISTINCT(payment.amount) FROM payment
+ORDER BY payment.amount
+
+
+-- exemplo
 SELECT * FROM payment
-WHERE payment.amount BETWEEN 8 AND 9
+WHERE payment.amount IN (0.99,1.98,1.99)
 
 -- exemplo
 SELECT COUNT(*) FROM payment
-WHERE payment.amount BETWEEN 8 AND 9
+WHERE payment.amount IN (0.99,1.98,1.99)
 
 -- exemplo
 SELECT COUNT(*) FROM payment
-WHERE payment.amount NOT BETWEEN 8 AND 9
+WHERE payment.amount NOT IN (0.99,1.98,1.99)
+
 
 -- exemplo
-SELECT * FROM payment
-WHERE payment.payment_date BETWEEN '2007-02-01' AND '2007-02-15'
+SELECT * FROM customer
+WHERE customer.first_name IN ('John','Jake','Julie')
 
--- """ ATENÇÃO """  - Não pega nada do database porque tem que ser sempre uma data posterior
-SELECT * FROM payment
-WHERE payment.payment_date BETWEEN '2007-02-01' AND '2007-02-14'
+
+-- exemplo
+SELECT * FROM customer
+WHERE customer.first_name NOT IN ('John','Jake','Julie')
