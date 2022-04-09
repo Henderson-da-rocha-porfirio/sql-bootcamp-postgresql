@@ -1,7 +1,21 @@
-# LIMIT - O comando LIMIT permite limitar o número de linhas retornadas para uma consulta.
-### Útil para não querer retornar todas as linhas de uma tabela, mas apenas visualizar as primeiras linhas para ter uma ideia do layout da tabela.
-### LIMIT também se torna útil em combinação com ORDER BY
-### LIMIT vai no final de uma solicitação de consulta e é o último comando a ser executado.
+# BETWEEN - 
+### O operador BETWEEN pode ser usado para corresponder um valor a um intervalo de valores: valor " BETWEEN low AND high "
+### The BETWEEN operator é o mesmo que:
+````
+value >= low AND value <= high
+````
+### Você também pode combinar BETWEEN com o operador lógico NOT:
+````
+value NOT BETWEEN low AND high
+````
+### O BETWEEN de igual forma pode ser usado com datas. Mas precisa ser formatado no formato padrão ISO 8601, que é: " YYYY-MM-DD "
+````
+date BETWEEN ‘2022-01-01’ 
+AND ‘2022-02-01’
+````
+### Quando usar BETWEEN com datas não esquecer de incluir " timestamp ", tem que ter cuidado e atenção ao usar BETWEEN e operadores de comparação " <= ", " >= ". Prestar atenção no fato de que o " datetime " começa em " 0:00 ".
+
+
 #### 1. Síntaxe básica
 ````
 SELECT * FROM table
