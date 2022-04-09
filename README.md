@@ -1,30 +1,19 @@
-# BETWEEN - 
-### O operador BETWEEN pode ser usado para corresponder um valor a um intervalo de valores: valor " BETWEEN low AND high "
-### The BETWEEN operator é o mesmo que:
-````
-value >= low AND value <= high
-````
-### Você também pode combinar BETWEEN com o operador lógico NOT:
-````
-value NOT BETWEEN low AND high
-````
-### O BETWEEN de igual forma pode ser usado com datas. Mas precisa ser formatado no formato padrão ISO 8601, que é: " YYYY-MM-DD "
-````
-date BETWEEN ‘2022-01-01’ 
-AND ‘2022-02-01’
-````
-### Quando usar BETWEEN com datas não esquecer de incluir " timestamp ", tem que ter cuidado e atenção ao usar BETWEEN e operadores de comparação " <= ", " >= ". Prestar atenção no fato de que o " datetime " começa em " 0:00 ".
-
+# IN - criar uma condição que verifica se um valor está incluído em uma lista de várias opções
+### Em certos casos, você deseja verificar várias opções de valor possíveis, por exemplo, se o nome de um usuário aparecer em uma(IN) lista de nomes conhecidos. Podemos usar o operador IN para criar uma condição que verifica se um valor está incluído em uma lista de várias opções.
 
 #### 1. Síntaxe básica
 ````
-SELECT * FROM table
-LIMIT 1
+SELECT color FROM table
+WHERE color IN (‘red’,’blue’)
 ````
-#### 2. Síntaxe básica com ORDER BY
+#### 2. Síntaxe básica
 ````
-SELECT * FROM table
-ORDER BY column_1 DESC
-LIMIT 5
+SELECT color FROM table
+WHERE color IN (‘red’,’blue’,’green’)
+````
+#### 3. Síntaxe básica
+````
+SELECT color FROM table
+WHERE color NOT IN (‘red’,’blue’)
 ````
 #### Para mais exemplos, verificar o arquivo sql
