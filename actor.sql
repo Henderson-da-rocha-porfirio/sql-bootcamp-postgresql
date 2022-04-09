@@ -1,3 +1,4 @@
+-- ACTOR
 -- Select table
 SELECT * FROM actor
 
