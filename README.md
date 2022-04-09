@@ -1,11 +1,11 @@
-# SELECT - COMANDO INICIAL PARA SELECIONAR
-### SELECT é a instrução mais comum usada e nos permite recuperar informações de uma tabela. Mais tarde vamos aprender a combinar
-
-### SELECT com outras instruções para realizar consultas mais complexas.
+# COUNT - COMANDO INICIAL PARA SELECIONAR
+### A função COUNT retorna o número de linhas de entrada que correspondem a uma condição específica de uma consulta.
+### Podemos aplicar COUNT em uma coluna específica ou apenas passar COUNT(*) , logo veremos que isso deve retornar o mesmo resultado.
 ### Sintaxe de exemplo para a instrução SELECT:
 #### 1. 
 ````
-SELECT column_name  FROM table_name
+SELECT COUNT(name) FROM table
+
 ````
 #### 2. 
 ````
