@@ -1,9 +1,8 @@
 # SQL Statement Fundamentals!
-### SELECT is the most common statement used, and it allows us to retrieve information from a table.
-Later on we will learn how to combine 
-### SELECT with other statements to perform more complex queries.
+### SELECT é a instrução mais comum usada e nos permite recuperar informações de uma tabela. Mais tarde vamos aprender a combinar
 
-### Example syntax for SELECT statement:
+### SELECT com outras instruções para realizar consultas mais complexas.
+### Sintaxe de exemplo para a instrução SELECT:
 #### 1. 
 ````
 SELECT column_name  FROM table_name
