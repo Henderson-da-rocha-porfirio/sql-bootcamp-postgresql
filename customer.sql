@@ -1,9 +1,12 @@
--- CUSTOMER
+-- CUSTOMER WHERE
 SELECT * FROM customer
 -- Selecionar os dados de um consumidor pelo primeiro nome dele 
 SELECT * FROM customer
 WHERE customer.first_name = 'Jared'
--- FILM
+
+
+
+-- FILM WHERE
 SELECT * FROM film
 -- exemplo 2
 SELECT * FROM film
@@ -33,3 +36,13 @@ WHERE film.rating = 'R' OR film.rating = 'PG-13'
 -- exemplo 6
 SELECT * FROM film
 WHERE film.rating != 'R'
+
+
+
+-- PAYMENT WHERE
+SELECT * FROM payment
+-- exemplo
+SELECT * FROM payment
+WHERE payment.amount != 0.00
+ORDER BY payment.payment_date DESC
+LIMIT 5
