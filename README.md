@@ -4,9 +4,9 @@
 ### LIMIT vai no final de uma solicitação de consulta e é o último comando a ser executado.
 #### 1. Síntaxe básica
 ````
-SELECT column_1,column_2
-FROM table
-ORDER BY column_1 ASC / DESC
+SELECT * FROM table
+ORDER BY column_1 DESC
+LIMIT 5
 ````
 #### Para mais exemplos, verificar o arquivo sql
 
