@@ -30,25 +30,21 @@ WHERE nome LIKE '_her%'
 ````
 ### RESPOSTA:
 ````
-Cheryl
-Teresa
+Cheryl 
+Theresa
 Sherri
 ````
-
+### COMPREENDENDO:
+#### - O retorno é sobre quem tem no nome " her " mas com o " _ " ele diz que quer apenas o que tem um caractere antecedendo:
+````
+C + heryl 
+T heresa
+S herri
+````
 
 #### 1. Síntaxe básica
 ````
-SELECT color FROM table
-WHERE color IN (‘red’,’blue’)
-````
-#### 2. Síntaxe básica
-````
-SELECT color FROM table
-WHERE color IN (‘red’,’blue’,’green’)
-````
-#### 3. Síntaxe básica
-````
-SELECT color FROM table
-WHERE color NOT IN (‘red’,’blue’)
+SELECT COUNT(*) FROM table
+WHERE column LIKE 'J%'
 ````
 #### Para mais exemplos, verificar o arquivo sql
