@@ -86,3 +86,20 @@ WHERE film.rating = 'R' OR film.rating = 'PG-13'
 -- exemplo 6
 SELECT * FROM film
 WHERE film.rating != 'R'
+
+
+
+-- FILM - length trabalha bem aqui porque é o nome de uma coluna desta tabela
+SELECT film.title,film.length FROM film
+ORDER BY film.length ASC
+LIMIT 5
+
+
+-- exemplo
+SELECT film.title,film.length FROM film
+ORDER BY film.length ASC
+LIMIT 10
+
+-- exemplo 2
+SELECT COUNT(film.title) FROM film
+WHERE film.length <= 50
