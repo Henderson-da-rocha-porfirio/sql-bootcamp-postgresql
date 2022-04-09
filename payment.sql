@@ -20,3 +20,7 @@ AND film.rating = 'R'
 -- exemplo com COUNT 3
 SELECT COUNT (*) FROM film
 WHERE film.rating = 'R' OR film.rating = 'PG-13'
+
+-- FILM COUNT
+SELECT COUNT(film.title) FROM film
+WHERE film.length <= 50
