@@ -55,3 +55,10 @@ WHERE film.rating = 'R' OR film.rating = 'PG-13'
 SELECT * FROM film
 WHERE film.rating != 'R'
 
+
+-- exemplo
+SELECT DISTINCT(payment.amount) FROM payment
+
+-- exemplo
+SELECT DISTINCT(payment.amount) FROM payment
+ORDER BY payment.amount
