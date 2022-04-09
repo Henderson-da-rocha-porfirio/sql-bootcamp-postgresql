@@ -93,13 +93,10 @@ WHERE film.rating != 'R'
 SELECT film.title,film.length FROM film
 ORDER BY film.length ASC
 LIMIT 5
-
-
 -- exemplo
 SELECT film.title,film.length FROM film
 ORDER BY film.length ASC
 LIMIT 10
-
 -- exemplo 2
 SELECT COUNT(film.title) FROM film
 WHERE film.length <= 50
