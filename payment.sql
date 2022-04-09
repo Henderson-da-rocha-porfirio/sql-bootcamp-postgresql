@@ -21,3 +21,13 @@ LIMIT 5
 -- exemplo 4
 SELECT * FROM payment
 LIMIT 1
+
+-- FILM - length trabalha bem aqui porque é o nome de uma coluna desta tabela
+SELECT film.title,film.length FROM film
+ORDER BY film.length ASC
+LIMIT 5
+
+-- exemplo
+SELECT film.title,film.length FROM film
+ORDER BY film.length ASC
+LIMIT 10
