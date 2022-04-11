@@ -27,3 +27,7 @@ SELECT payment.customer_id, SUM(amount) AS total_spent
 FROM payment
 GROUP BY payment.customer_id
 HAVING SUM(payment.amount) > 100
+
+SELECT payment.customer_id,payment.amount AS new_name
+FROM payment
+WHERE payment.customer_id > 2
