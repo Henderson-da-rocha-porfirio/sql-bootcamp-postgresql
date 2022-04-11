@@ -2,7 +2,7 @@
 
 #### 1. Síntaxe básica
 ````
--- FILM - saber A MÉDIA
-SELECT AVG(column) FROM table
+SELECT column FROM table
+GROUP BY column
 ````
 #### Para mais exemplos, verificar o arquivo sql
