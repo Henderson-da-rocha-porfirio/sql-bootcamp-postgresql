@@ -14,4 +14,11 @@ SELECT * FROM TableA
 INNER JOIN TableB
 ON TableA.name = TableB.name
 ````
+#### 2. Síntaxe básica - selecionando de tuas tabelas
+````
+SELECT payment.payment_id,payment.customer_id,customer.first_name
+FROM payment
+INNER JOIN customer
+ON payment.customer_id = customer.customer_id
+````
 #### Para mais exemplos, verificar o arquivo sql
