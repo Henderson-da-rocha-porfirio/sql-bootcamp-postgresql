@@ -1,3 +1,5 @@
+# INNER JOIN -  resultará com o conjunto de registros que correspondem em ambas as tabelas.
+
 # JOIN (junção) – corresponde a uma operação de junção em álgebra relacional – combina colunas de uma ou mais tabelas em uma nova tabela.
 ### O SQL padrão ANSI especifica cinco tipos de JOIN:
 #### INNER JOIN
