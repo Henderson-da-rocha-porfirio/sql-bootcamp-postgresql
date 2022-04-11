@@ -37,3 +37,10 @@ LIMIT 5
 SELECT film.title,film.length FROM film
 ORDER BY film.length ASC
 LIMIT 10
+
+
+-- PAYMENT
+SELECT payment.customer_id,SUM(payment.amount) FROM payment
+GROUP BY payment.customer_id
+ORDER BY SUM(payment.amount) DESC
+LIMIT 5
