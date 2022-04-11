@@ -1,4 +1,4 @@
-# AVG() - RETORNA A MÉDIA
+# GROUP - BY nos permite agregar colunas por alguma categoria
 
 #### 1. Síntaxe básica
 ````
