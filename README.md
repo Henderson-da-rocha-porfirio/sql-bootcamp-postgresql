@@ -5,17 +5,6 @@
 
 #### 1. Síntaxe básica
 ````
-SELECT color FROM table
-WHERE color IN (‘red’,’blue’)
-````
-#### 2. Síntaxe básica
-````
-SELECT color FROM table
-WHERE color IN (‘red’,’blue’,’green’)
-````
-#### 3. Síntaxe básica
-````
-SELECT color FROM table
-WHERE color NOT IN (‘red’,’blue’)
+SELECT MIN(column) FROM table
 ````
 #### Para mais exemplos, verificar o arquivo sql
