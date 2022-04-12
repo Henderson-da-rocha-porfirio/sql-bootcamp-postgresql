@@ -14,4 +14,11 @@ SELECT * FROM TableA
 LEFT OUTER JOIN TableB
 ON TableA.col_match = TableB.col_match
 ````
+
+#### 2. Síntaxe básica
+````
+SELECT * FROM TableA
+LEFT JOIN TableB
+ON TableA.col_match = TableB.col_match
+````
 #### Para mais exemplos, verificar o arquivo sql
