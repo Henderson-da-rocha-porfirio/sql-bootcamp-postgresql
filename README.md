@@ -1,4 +1,4 @@
-# FULL OUTER JOIN -  Eles nos permitirão especificar como lidar com valores presentes apenas em uma das tabelas que estão sendo unidas.
+# LEFT OUTER JOIN - resulta no conjunto de registros que estão na tabela à esquerda, se não houver correspondência com a tabela à direita, os resultados serão nulos.
 
 # JOIN (junção) – corresponde a uma operação de junção em álgebra relacional – combina colunas de uma ou mais tabelas em uma nova tabela.
 ### O SQL padrão ANSI especifica cinco tipos de JOIN:
@@ -11,7 +11,7 @@
 #### 1. Síntaxe básica
 ````
 SELECT * FROM TableA
-FULL OUTER JOIN TableB
+LEFT OUTER JOIN TableB
 ON TableA.col_match = TableB.col_match
 ````
 #### Para mais exemplos, verificar o arquivo sql
