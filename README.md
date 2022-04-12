@@ -14,3 +14,4 @@ A resposta deve ser 20.
 ````
 A resposta é Eddie Tomlin
 ````
+#### Verificar as instruções utilizadas no arquivo.sql
