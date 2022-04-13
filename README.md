@@ -1,11 +1,12 @@
 # EXISTS - é usado para testar a existência de linhas em uma subconsulta.
-### Normalmente, uma subconsulta é passada na função EXISTS() para verificar se alguma linha é retornada com a subconsulta.
+### Uma autojunção é uma consulta na qual uma tabela é unida a si mesma.
+### As autojunções são úteis para comparar valores em uma coluna de linhas na mesma tabela.
 
 #### 1. Síntaxe básica
 ````
-SELECT column_name 
-FROM table_name
-WHERE EXISTS
-(SELECT column_name FROM table_name WHERE condition);
+SELECT tableA.col, tableB.col
+FROM table AS tableA
+JOIN table AS tableB ON
+tableA.some_col = tableB.other_col
 ````
 #### Para mais exemplos, verificar o arquivo sql
