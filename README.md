@@ -1,5 +1,4 @@
-# EXISTS - é usado para testar a existência de linhas em uma subconsulta.
-### Uma autojunção é uma consulta na qual uma tabela é unida a si mesma.
+# SELF JOIN - Uma autojunção é uma consulta na qual uma tabela é unida a si mesma.
 ### As autojunções são úteis para comparar valores em uma coluna de linhas na mesma tabela.
 
 #### 1. Síntaxe básica
