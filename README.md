@@ -1,12 +1,11 @@
-# SUBQUERY - Uma subconsulta permite que você construa consultas complexas
-### Essencialmente realizando uma consulta nos resultados de outra consulta.
-### A sintaxe é direta e envolve duas instruções SELECT.
+# EXISTS - é usado para testar a existência de linhas em uma subconsulta.
+### Normalmente, uma subconsulta é passada na função EXISTS() para verificar se alguma linha é retornada com a subconsulta.
 
 #### 1. Síntaxe básica
 ````
-SELECT columnA,columnB 
-FROM table 
-WHERE columnB > (SELECT AVG(columnB) 
-FROM table)
+SELECT column_name 
+FROM table_name
+WHERE EXISTS
+(SELECT column_name FROM table_name WHERE condition);
 ````
 #### Para mais exemplos, verificar o arquivo sql
