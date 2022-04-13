@@ -1,4 +1,4 @@
-# Extract - Ele explora funções e operações relacionadas a esses tipos de dados específicos:
+# AGE - Ele explora funções e operações relacionadas a esses tipos de dados específicos:
 
 ### EXTRACT()
 ### AGE()
