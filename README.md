@@ -1,4 +1,4 @@
-# Mathematicals -  São funcões para calcular porcentagem
+# String -  Funcões para se trabalhar com Strings
 
 #### 1. Síntaxe básica
 ````
