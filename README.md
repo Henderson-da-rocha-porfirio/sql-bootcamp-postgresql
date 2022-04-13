@@ -1,5 +1,4 @@
-# Timestamps - é usado para combinar o conjunto de resultados de duas ou mais instruções SELECT.
-### Ele explora funções e operações relacionadas a esses tipos de dados específicos:
+# Timestamps - Ele explora funções e operações relacionadas a esses tipos de dados específicos:
 #### TIMEZONE
 #### NOW
 #### TIMEOFDAY
