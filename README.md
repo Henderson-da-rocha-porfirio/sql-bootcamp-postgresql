@@ -1,4 +1,4 @@
-# AGE - Ele explora funções e operações relacionadas a esses tipos de dados específicos:
+# TO_CHAR - Ele explora funções e operações relacionadas a esses tipos de dados específicos:
 
 ### EXTRACT()
 ### AGE()
