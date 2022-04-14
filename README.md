@@ -7,6 +7,11 @@ SET column1 = value1,
 WHERE
    condition;
 ````
-
-
+#### 2. SÍNTAXE: -- Using another table’s values (UPDATE join)
+````
+UPDATE TableA
+SET original_col = TableB.new_col
+FROM tableB
+WHERE tableA.id = TableB.id
+````
 
