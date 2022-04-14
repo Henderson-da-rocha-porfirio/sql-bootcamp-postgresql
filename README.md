@@ -1,17 +1,55 @@
-# DELETE - para remover linhas de uma tabela
+# ALTER - permite alterações em uma estrutura de tabela existente, como:
+### Adicionando, descartando ou renomeando colunas
+### Alterando o tipo de dados de uma coluna
+### Definir valores DEFAULT para uma coluna
+### Adicionar restrições CHECK
+### Renomear tabela
 #### 1. SÍNTAXE:
 ````
-DELETE FROM table
-WHERE row_id = 1
+ALTER TABLE table_name action
 ````
-#### 2. SÍNTAXE: -- Using another table’s values (UPDATE join)
+#### 2. SÍNTAXE: -- Adding Columns
 ````
-DELETE FROM tableA
-USING tableB
-WHERE tableA.id=TableB.id
+ALTER TABLE table_name 
+ADD COLUMN new_col TYPE
 ````
-#### 3. SÍNTAXE: -- todas as rows:
+#### 3. SÍNTAXE: -- Removing Columns
 ````
-DELETE FROM table
+ALTER TABLE table_name 
+DROP COLUMN col_name
 ````
+#### 4. SÍNTAXE: -- Alter constraints
+````
+ALTER TABLE table_name 
+ALTER COLUMN col_name
+SET DEFAULT value
+
+
+ALTER TABLE table_name 
+ALTER COLUMN col_name
+DROP DEFAULT
+
+ALTER TABLE table_name 
+ALTER COLUMN col_name
+DROP DEFAULT
+
+ALTER TABLE table_name 
+ALTER COLUMN col_name
+SET NOT NULL
+
+
+ALTER TABLE table_name 
+ALTER COLUMN col_name
+DROP NOT NULL
+
+ALTER TABLE table_name 
+ALTER COLUMN col_name
+DROP NOT NULL
+
+ALTER TABLE table_name 
+ALTER COLUMN col_name
+ADD CONSTRAINT constraint_name
+````
+
+
 
