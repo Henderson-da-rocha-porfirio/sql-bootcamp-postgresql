@@ -1,81 +1,32 @@
--- SOLUTIONS TO ASSESSMENT TEST 2
+-- estudantes table:
 
--- 1. Solucao:
-
-SELECT * FROM cd.facilities;
-
--- 2. Solucao:
-
-SELECT name, membercost FROM cd.facilities;
-
--- 3. Solucao:
-
- SELECT * FROM cd.facilities WHERE membercost > 0;
-
--- 4. Solucao:
-
- SELECT facid, name, membercost, monthlymaintenance
- FROM cd.facilities
- WHERE membercost > 0 AND
- (membercost < monthlymaintenance/50.0);
- 
- -- 5. Solucao:
-
- SELECT * FROM cd.facilities WHERE name LIKE '%Tennis%';
-
--- 6. Solucao:
-
-SELECT * FROM cd.facilities WHERE facid IN (1,5);
-
- 
- -- 7. Solucao:
-
-SELECT memid, surname, firstname, joindate 
-FROM cd.members WHERE joindate >= '2012-09-01';
+CREATE TABLE estudantes(
+estudante_id serial PRIMARY KEY,
+primeiro_nome VARCHAR(45) NOT NULL,
+ultimo_nome VARCHAR(45) NOT NULL, 
+sala_numero integer,
+fone VARCHAR(20) UNIQUE NOT NULL,
+email VARCHAR(115) UNIQUE,
+graduacao_ano integer);
 
 
--- 8. Solucao:
-SELECT DISTINCT surname FROM cd.members
-ORDER BY  surname LIMIT 10;
- 
- -- 9. Solucao:
+-- professores table:
 
- SELECT MAX(joindate) AS latest_signup FROM cd.members;
-
--- 10. Solucao:
-
-SELECT COUNT(*) FROM cd.facilities WHERE guestcost >= 10;
-
-  
- -- 11. Solucao:
-
-SELECT facid, sum(slots) AS "Total Slots" FROM cd.bookings WHERE starttime >= '2012-09-01' AND starttime < '2012-10-01' GROUP BY facid ORDER BY SUM(slots);
+CREATE TABLE professores(
+professor_id serial PRIMARY KEY,
+primeiro_nome VARCHAR(45) NOT NULL,
+ultimo_nome VARCHAR(45) NOT NULL, 
+sala_numero integer,
+departamento VARCHAR(45),
+email VARCHAR(20) UNIQUE,
+fone VARCHAR(20) UNIQUE);
 
 
--- 12. Solucao:
- SELECT facid, sum(slots) AS total_slots FROM cd.bookings GROUP BY facid HAVING SUM(slots) > 1000 ORDER BY facid
- 
- -- 13. Solucao:
+-- inserting the estudante information:
 
-SELECT cd.bookings.starttime AS start, cd.facilities.name 
-AS name 
-FROM cd.facilities 
-INNER JOIN cd.bookings
-ON cd.facilities.facid = cd.bookings.facid 
-WHERE cd.facilities.facid IN (0,1) 
-AND cd.bookings.starttime >= '2012-09-21' 
-AND cd.bookings.starttime < '2012-09-22' 
-ORDER BY cd.bookings.starttime;
+INSERT INTO estudantes(primeiro_nome,ultimo_nome, sala_numero,fone,graduacao_ano)VALUES ('Mark','Watney',5,'7755551234',2035);
 
 
--- 14. Solucao:
+-- inserting the professor information:
 
-SELECT cd.bookings.starttime 
-FROM cd.bookings 
-INNER JOIN cd.members ON 
-cd.members.memid = cd.bookings.memid 
-WHERE cd.members.firstname='David' 
-AND cd.members.surname='Farrell';
-
-
- 
+INSERT INTO professores(primeiro_nome,ultimo_nome, sala_numero,departamento,email,fone)VALUES ('Jonas','Salk',5,'Biology','jsalk@school.org','7755554321');
