@@ -1,21 +1,23 @@
-TESTE 2  - SQL - TESTE DE AVALIAÇÃO 2
+TESTE 3  - SQL - TESTE DE AVALIAÇÃO 3
 
 COMPLETE AS SEGUINTES TAREFAS!
 
-1. Como você pode recuperar todas as informações da tabela cd.facilities?
-2. Você deseja imprimir uma lista de todas as instalações e seus custos para os membros. Como você recuperaria uma lista apenas de nomes e custos de instalações?
-3. Como você pode produzir uma lista de instalações que cobram uma taxa aos membros?
-4. Como você pode produzir uma lista de instalações que cobram uma taxa aos membros e essa taxa é inferior a 1/50 do custo mensal de manutenção? Devolva o facid, nome da instalação, custo do membro e manutenção mensal das instalações em questão.
-5. Como você pode produzir uma lista de todas as instalações com a palavra 'Tênis' em seu nome?
-6. Como você pode recuperar os detalhes das instalações com ID 1 e 5? Tente fazer isso sem usar o operador OR.
-7. Como você pode produzir uma lista de membros que ingressaram após o início de setembro de 2012? Retorne o memid, sobrenome, nome e data de ingresso dos membros em questão.
-8. Como você pode produzir uma lista ordenada dos 10 primeiros sobrenomes na tabela de membros? A lista não deve conter duplicatas.
-9. Você gostaria de obter a data de inscrição do seu último membro. Como você pode recuperar essas informações?
-10. Produza uma contagem do número de instalações que têm um custo para hóspedes de 10 ou mais.
-11. Produza uma lista do número total de slots reservados por instalação no mês de setembro de 2012. Produza uma tabela de saída consistindo em id de instalação e slots, classificados pelo número de slots.
-12. Produza uma lista de instalações com mais de 1.000 vagas reservadas. Produza uma tabela de saída que consiste em ID de instalação e slots totais, classificados por ID de instalação.
-13. Como você pode produzir uma lista dos horários de início para reservas de quadras de tênis, para a data '2012-09-21'? Retorna uma lista de pares de nome de instalação e hora de início, ordenados por hora.
-14. Como você pode produzir uma lista dos horários de início para reservas por membros chamados 'David Farrell'?
+### 1. Crie um novo banco de dados chamado "Escola" este banco de dados deve ter duas tabelas: professores e alunos.
+````
+A. A tabela de alunos deve ter colunas para Student_id, first_name,last_name, homeroom_number, phone,email e ano de graduação.
 
+B. A tabela de professores deve ter colunas para teacher_id, first_name, last_name, homeroom_number, departamento, e-mail e telefone.
+````
+### 2. As restrições dependem principalmente de você, mas suas restrições de tabela precisam considerar o seguinte:
+````
+ A. Devemos ter um número de telefone para entrar em contato com os alunos em caso de emergência.
+ B. Devemos ter ids como chave primária das tabelas
+ C. Os números de telefone e e-mails devem ser exclusivos para o indivíduo.
+````
+### 3. Depois de fazer as tabelas, insira um aluno chamado Mark Watney (student_id=1) que tenha um número de telefone 777-555-1234 e não tenha um e-mail. Ele se forma em 2035 e tem 5 como número da sala de aula.
+
+Em seguida, insira um nome de professor Jonas Salk (teacher_id = 1) que como homeroom número 5 e é do departamento de Biologia. Suas informações de contato são: jsalk@school.org e um número de telefone 777-555-4321.
+
+### 4. Tenha em mente que essas tarefas de inserção podem afetar suas restrições!
 
 #### Verificar as respostas equivalentes no arquivo.sql
