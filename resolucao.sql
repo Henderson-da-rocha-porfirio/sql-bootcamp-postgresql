@@ -29,4 +29,4 @@ INSERT INTO estudantes(primeiro_nome,ultimo_nome, sala_numero,fone,graduacao_ano
 
 -- inserting the professor information:
 
-INSERT INTO professores(primeiro_nome,ultimo_nome, sala_numero,departamento,email,fone)VALUES ('Jonas','Salk',5,'Biology','jsalk@school.org','7755554321');
+INSERT INTO professores(primeiro_nome,ultimo_nome, sala_numero,departamento,email,fone)VALUES ('Jonas','Salk',5,'Quimica','jsalk@post.org','7755554321');
