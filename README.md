@@ -8,3 +8,4 @@ CREATE TABLE table_name (
    table_constraint table_constraint
 ) INHERITS existing_table_name;
 ````
+### Verificar exemplos no arquivo.sql
