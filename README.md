@@ -1,17 +1,17 @@
-# UPDATE -  permite alterar os valores das colunas de uma tabela.
+# DELETE - para remover linhas de uma tabela
 #### 1. SÍNTAXE:
 ````
-UPDATE table
-SET column1 = value1,
-    column2 = value2 ,...
-WHERE
-   condition;
+DELETE FROM table
+WHERE row_id = 1
 ````
 #### 2. SÍNTAXE: -- Using another table’s values (UPDATE join)
 ````
-UPDATE TableA
-SET original_col = TableB.new_col
-FROM tableB
-WHERE tableA.id = TableB.id
+DELETE FROM tableA
+USING tableB
+WHERE tableA.id=TableB.id
+````
+#### 3. SÍNTAXE: -- todas as rows:
+````
+DELETE FROM table
 ````
 
