@@ -12,11 +12,6 @@ SET ultimo_login = CURRENT_TIMESTAMP
 UPDATE conta
 SET ultimo_login = criado_em
 
--- Using another table’s values (UPDATE join)
-UPDATE TableA
-SET original_col = TableB.new_col
-FROM tableB
-WHERE tableA.id = TableB.id
 
 -- Return affected rows
 UPDATE conta
