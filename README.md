@@ -42,5 +42,5 @@ Não realizamos aritmética com números, então provavelmente faz mais sentido 
 2. Zeros à esquerda podem causar problemas, 7 e 07 tratados da mesma forma numericamente, mas não são o mesmo número de telefone
 ````
 #### 4. Ao criar um banco de dados e uma tabela, reserve um tempo para planejar o armazenamento de longo prazo
-#### 5. Lembre-se de que você sempre pode remover informações históricas que decidiu que não estar usando, mas não pode voltar no tempo para adicionar informações!
+#### 5. Lembre-se de que você sempre pode remover dados históricos que decidiu que não estar usando, mas não pode voltar no tempo para adicionar dados!
 #### Verificar as respostas equivalentes no arquivo.sql
