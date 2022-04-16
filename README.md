@@ -1,13 +1,14 @@
-# CAST - permite converter de um tipo de dados em outro.
-### Tenha em mente que nem todas as instâncias de um tipo de dados podem ser CAST para outro tipo de dados,
-### deve ser razoável converter os dados, por exemplo, '5' para um inteiro funcionará, 'cinco' para um inteiro não.
+# NULLIF recebe 2 entradas e retorna NULL se ambas forem iguais, caso contrário, retorna o primeiro argumento passado.
 #### 1. SÍNTAXE:
 ````
-SELECT CAST(‘5’ AS INTEGER)
+NULLIF(arg1,arg2)
 ````
 
 #### 2. SÍNTAXE:
 ````
-SELECT CAST(date AS TIMESTAMP) 
-FROM table
+NULLIF(10,10)
+````
+#### Retorna:
+````
+NULO
 ````
