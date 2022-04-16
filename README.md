@@ -5,14 +5,8 @@
 ### Observe que uma visualização não armazena dados fisicamente, ela simplesmente armazena a consulta.
 #### 1. SÍNTAXE:
 ````
-NULLIF(arg1,arg2)
-````
-
-#### 2. SÍNTAXE:
-````
-NULLIF(10,10)
-````
-#### Retorna:
-````
-NULO
+CREATE VIEW customer_info AS
+SELECT first_name,last_name,address FROM customer
+INNER JOIN address
+ON customer.address_id = address.address_id
 ````
