@@ -11,12 +11,3 @@ SELECT COALESCE (1, 2)
 SELECT COALESCE(NULL, 2, 3)
 2 
 ````
-#### 2. SÍNTAXE:
-````
-SELECT a,
-       CASE a WHEN 1 THEN 'one'
-              WHEN 2 THEN 'two'
-              ELSE 'other'
-      END
-FROM test;
-````
