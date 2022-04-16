@@ -1,10 +1,7 @@
-# COALESCE aceita um número ilimitado de argumentos. Ele retorna o primeiro argumento que não é nulo.
-### Se todos os argumentos forem nulos, a função COALESCE retornará nulo.
-### A função COALESCE torna-se útil ao consultar uma tabela que contém valores nulos e substituí-la por outro valor.
+# CAST - permite converter de um tipo de dados em outro.
+### Tenha em mente que nem todas as instâncias de um tipo de dados podem ser CAST para outro tipo de dados,
+### deve ser razoável converter os dados, por exemplo, '5' para um inteiro funcionará, 'cinco' para um inteiro não.
 #### 1. SÍNTAXE:
 ````
-SELECT COALESCE (1, 2)
-1
-SELECT COALESCE(NULL, 2, 3)
-2 
+SELECT CAST(‘5’ AS INTEGER)
 ````
