@@ -9,4 +9,12 @@ SELECT a,
 CASE WHEN a = 1 THEN ‘one’
      WHEN a = 2 THEN ‘two’
 ````
-
+#### 2. SÍNTAXE:
+````
+SELECT a,
+       CASE a WHEN 1 THEN 'one'
+              WHEN 2 THEN 'two'
+              ELSE 'other'
+      END
+FROM test;
+````
