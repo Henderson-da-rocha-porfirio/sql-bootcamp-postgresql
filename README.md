@@ -5,3 +5,9 @@
 ````
 SELECT CAST(‘5’ AS INTEGER)
 ````
+
+#### 2. SÍNTAXE:
+````
+SELECT CAST(date AS TIMESTAMP) 
+FROM table
+````
