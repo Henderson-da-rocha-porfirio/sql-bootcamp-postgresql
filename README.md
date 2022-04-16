@@ -5,9 +5,8 @@
 ````
 #### 1. SÍNTAXE:
 ````
-CREATE TABLE players(
-  player_id SERIAL column_constraint,
-  column_name TYPE column_constraint,
-   );
+SELECT a, 
+CASE WHEN a = 1 THEN ‘one’
+     WHEN a = 2 THEN ‘two’
 ````
 
