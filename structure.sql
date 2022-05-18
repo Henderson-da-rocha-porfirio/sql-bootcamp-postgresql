@@ -18,7 +18,7 @@ select show_tables()
 
 -- 3 with lenght
  select column_name, data_type, character_maximum_length
- from INFORMATION_SCHEMA.COLUMNS where table_name ='kitchen';
+ from INFORMATION_SCHEMA.COLUMNS where table_name ='nome-sua-tabela';
  
  -- 4 no lenght
  
@@ -29,4 +29,4 @@ select show_tables()
 FROM 
    information_schema.columns
 WHERE 
-   table_name = 'kitchen';
+   table_name = 'nome-sua-tabela';
